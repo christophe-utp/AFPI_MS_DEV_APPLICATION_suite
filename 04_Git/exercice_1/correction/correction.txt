@@ -1,0 +1,8 @@
+# Initialiser le projet git
+git init
+
+# Ajouter un fichier/dossier dans la staging area/index
+git add . OU git add [nom_fichier]
+
+# Commiter/Enregistrer les modifications
+git commit -m "un message"

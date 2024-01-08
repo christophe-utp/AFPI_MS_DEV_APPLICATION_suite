@@ -1,0 +1,48 @@
+:root{
+    --primary: yellow;
+    --secondary: brown;
+    --other: purple;
+}
+
+
+
+
+* {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+
+
+main {
+    display: flex;
+}
+
+.column {
+    padding: 10px;
+    height: 500px;
+}
+
+.column.side{
+    /* background-color: beige; */
+    background-color: var(--primary);
+    flex: 1;
+}
+
+.column.middle{
+    background-image: url(./img/lapin.jpg);
+    background-size: cover;
+    flex: 3;
+}
+
+footer {
+    background-color: var(--other);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}

@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(223, 223, 223);
+}
+
+nav {
+  height: 70px;
+  background-color: teal;
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+form {
+  text-align: left;
+}
+
+fieldset > textarea {
+  height: 150px;
+}
+
+table {
+  width: 100%;
+  background-color: white;
+}
+
+.formSpace {
+  margin-bottom: 5px;
+}
+
+.flexSpaceBetween {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.textalign_right {
+  text-align: right;
+}
+
+.textalign_left {
+  text-align: left;
+}
+
+.maxWidth {
+  width: 100%;
+}
+
+.btnImpact {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url("assets/bouton_noir.png");
+}
+
+.btnImpact:hover {
+  background-image: url("assets/bouton_noir_2.png");
+}
+
+.btnMenu {
+  height: 20px;
+  width: 120px;
+  margin: auto;
+  padding: 15px;
+}
+
+#welcomeMessage>p:first-child {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: teal;
+}
+
+#welcomeMessage>p:last-child {
+    font-weight: bold;
+    color: white;
+}
+
+#weeklyAgenda {
+  background-color: teal;
+}
+
+#dlPDF {
+  padding: 0 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#headerTitle {
+  background-color: rgb(255, 127, 39);
+  display: flex;
+  justify-content: left;
+}
+
+#headerTitle > div {
+  margin: auto;
+  text-align: center;
+}
+
+#sendMail {
+  border: none;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+textarea {
+  resize: none;
+}

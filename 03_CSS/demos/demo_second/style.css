@@ -1,0 +1,47 @@
+* {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+.fontperso {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* https://fonts.google.com/ */
+
+.fontgoogle {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.fontpropriete{
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgba(23, 199, 143, 0.969);
+    text-decoration: underline;
+    text-align: justify;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    text-shadow: 0px 0px 5px red;
+    text-transform: uppercase;
+}
+
+.proprieteboite {
+    border: 2px solid blue;
+    /* padding-top: 4px;
+    padding-left: 20px;
+    padding-bottom: 10px; */
+    /* padding: 20px; */
+    padding: 20px 10px 5px 2px;
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: brown;
+    color: yellow;
+}

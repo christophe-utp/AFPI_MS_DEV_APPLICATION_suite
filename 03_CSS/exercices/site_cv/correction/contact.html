@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon CV</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="headerTitle">
+            <img src="assets/logo_afpi.jpg" alt="Logo de m2i Digital Learning">
+            <div id="welcomeMessage">
+                <p>Bienvenue sur le site perso de "Prenom Nom"</p>
+                <p>En formation à m2i Formation</p>
+            </div>
+        </div>
+        <nav>
+            <a class="btnMenu btnImpact" href="index.html">Accueil</a>
+            <a class="btnMenu btnImpact" href="cv.html">CV</a>
+            <a class="btnMenu btnImpact" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Vos infos</legend>
+                <div class="formSpace">
+                    <input type="radio" name="personSex" id="mr" value="mr" checked><label for="mr">Mr.</label>
+                    <input type="radio" name="personSex" id="mme" value="mme"><label for="mme">Mme.</label>
+                    <input type="radio" name="personSex" id="mlle" value="mlle"><label for="mlle">Mlle.</label>
+                </div>
+                <div class="formSpace flexSpaceBetween">
+                    <span>
+                        <label>Nom :</label> <input type="text" name="personLName" placeholder="DUPONT">
+                    </span>
+                    <span>
+                        <label>Prénom :</label> <input type="text" name="personFName" placeholder="Louis">
+                    </span>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>Votre mail</legend>
+                <input type="text" name="mailFrom" placeholder="nom@domaine.com" class="maxWidth">
+            </fieldset>
+            <fieldset>
+                <legend>Objet du message</legend>
+                <input type="text" name="mailObject" placeholder="Demande de..." class="maxWidth">
+            </fieldset>
+            <fieldset>
+                <legend>Contenu du message</legend>
+                <textarea name="mailContent" placeholder="Bonjour, j'aimerai..." class="maxWidth"></textarea>
+            </fieldset>
+        </form>
+        <br>
+        <button class="btnImpact" id="sendMail">Envoyer</button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

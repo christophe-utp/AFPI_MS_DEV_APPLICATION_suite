@@ -1,0 +1,36 @@
+.block {
+    display: block;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+div {
+    margin: 10px;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.lastpara:first-letter {
+    font-size: 50px;
+    float: left;
+}
+
+aside {
+    float: right;
+    background-color: blue;
+    width: 150px;
+    height: 500px;
+}

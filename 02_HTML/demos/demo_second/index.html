@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seconde Démo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ma démo HTML</h1>
+      <h2>Hyper Text Markup Language</h2>
+      <nav id="manav">
+        <h3>Ma navigation</h3>
+        <ul>
+          <li><a href="#sec-ide">Installation d'un IDE</a></li>
+          <li><a href="#sec-forme">Mise en forme du texte</a></li>
+          <li><a href="#sec-listes">Les listes</a></li>
+          <li><a href="#sec-liens">Les liens</a></li>
+          <li><a href="./page2.html">Ma seconde page</a></li>
+          <li><a href="#sec-img">Les images</a></li>
+          <li><a href="#sec-sem">Balises non sémantiques</a></li>
+          <li><a href="#sec-tav">Les Tableaux</a></li>
+          <li><a href="./tableaux.html">La page tableaux</a></li>
+          <li><a href="./iframe.html">La page iframe</a></li>
+          <li><a href="./formulaire.html">La page formulaire</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- ce qui suit est un commentaire avec vscode j'utilise le reccourci ctrl + k + c  -->
+      <!-- je n'oublie que les commentaires sont visible par tous dans l'inspecteur que j'ouvre avec clique droit inspecter ou F12 sur firefox -->
+      <!-- ici j'utilise une balise orpheline hr :  -->
+      <hr />
+      <section id="sec-ide">
+        <h3>IDE :</h3>
+        <p>
+          Pour faire de l'HTML j'ai dabord installe un IDE :
+          <a href="https://code.visualstudio.com/" target="_blank">VSCODE</a>
+        </p>
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <hr />
+      <section id="sec-forme">
+        <h3>Mise en forme du texte</h3>
+        <p>J'ai decouvert plusieurs balise interessante :</p>
+        <p>Les titres avec les balise h1 à h6</p>
+        <h1>Titre 1</h1>
+        <h2>Titre 2</h2>
+        <h3>Titre 3</h3>
+        <h4>Titre 4</h4>
+        <h5>Titre 5</h5>
+        <h6>Titre 6</h6>
+        <p>
+          J'utilise une balise p pour paragraphe afin d'ajouter du texte à mon
+          site
+        </p>
+        <p>
+          Pour mettre mon texte en gras j'utilise la balise b exemple
+          <b>mon texte en gras</b>
+        </p>
+        <p>
+          Pour mettre mon texte en italique j'utilise la balise i exemple
+          <i>mon texte en italique</i>
+        </p>
+        <p>
+          Pour souligne du texte j'utilise la balise u exemple :
+          <u>mon texte souligne</u>
+        </p>
+        <p>
+          Pour surligne mon texte j'utilise la balise mark exemple :
+          <mark>mon texte surligne</mark>
+        </p>
+        <p>pour du texte preformatte la balise pre</p>
+        <p>
+          pour indique de l'importance a mon texte j'utilise la balise strong
+          exemple : <strong>mon texte en strong</strong>
+        </p>
+        <p>
+          si je souhaite mettre l'emphase sur mon texte j'utilise la balise em
+          exemple : <em>mon texte en em</em>
+        </p>
+        <p>pour force le saut de ligne j'utiliser la balise br</p>
+        <p>Une separation horizontale à l'aide la balise hr</p>
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <hr />
+      <section id="sec-listes">
+        <h3>Les listes :</h3>
+        <ul>
+          <li>Les listes ordonnées classiques</li>
+          <ol>
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes ordonnées inversées</li>
+          <ol reversed>
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes ordonnées commençant à X</li>
+          <ol start="10">
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes ordonnées avec lettres majuscule</li>
+          <ol type="A">
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes ordonnées avec lettres minuscule</li>
+          <ol type="a">
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes ordonnées avec chiffres romains minuscule</li>
+          <ol type="i">
+            <li>Item01</li>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <li>Item05</li>
+          </ol>
+          <li>Les listes non orfonnées</li>
+          <ul>
+            <li>Item01</li>
+            <ul>
+              <li>Item01</li>
+              <li>Item02</li>
+              <li>Item03</li>
+              <li>Item04</li>
+              <li>Item05</li>
+            </ul>
+            <li>Item02</li>
+            <ul>
+              <li>Item01</li>
+              <li>Item02</li>
+              <li>Item03</li>
+              <li>Item04</li>
+              <li>Item05</li>
+            </ul>
+            <li>Item03</li>
+            <ul>
+              <li>Item01</li>
+              <li>Item02</li>
+              <li>Item03</li>
+              <li>Item04</li>
+              <li>Item05</li>
+            </ul>
+          </ul>
+        </ul>
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <hr />
+      <section id="sec-liens">
+        <h3 id="titre-lien">Les liens :</h3>
+        <p>
+          Pour faire un lien j'utilise la balise a (pour ancre ou anchor en
+          anglais)
+        </p>
+        <p>Exemples :</p>
+        <a href="http://google.fr">Google dans l'onglet actuel</a>
+        <a href="http://google.fr" target="_blank"
+          >Google dans un nouvel onglet</a
+        >
+
+        <p>Liens pour telechargement :</p>
+        <!-- je vais donner le chemin relatif de ma ressources  -->
+        <p>
+          <a href="./img/lapin.jpg" download="./img/lapin.jpg"
+            >Telecharger mon image</a
+          >
+        </p>
+        <p>Lien vers ma seconde page de mon site :</p>
+        <a href="./page2.html">Ma seconde page</a>
+
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <hr />
+      <section id="sec-img">
+        <h3>Section images</h3>
+        <!-- <img src="./img/lapin.jpeg" alt="mon lapin avec une erreur de source" /> -->
+        <img src="./img/lapin.jpg" alt="mon lapin" height="200" />
+        <img src="./img/lapin.jpg" alt="mon lapin" width="300" />
+        <figure>
+          <img src="./img/lapin.jpg" alt="mon lapin" height="200" />
+          <figcaption>Mon joli lapin !!!</figcaption>
+        </figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/fr/d/d1/Logo_de_Libres_%21.png"
+          alt="le logo libre"
+          width="200"
+        />
+        <a href="./page2.html"
+          ><img src="./img/lapin.jpg" alt="mon lapin vers page 2" height="200"
+        /></a>
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <hr />
+      <section id="sec-sem">
+        <h3>Les Balises non sémantiques</h3>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            voluptate obcaecati, consectetur recusandae dicta unde accusantium
+            hic explicabo dignissimos iusto sit alias quam animi labore tempore,
+            suscipit nostrum quis at.
+            <span>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae dicta tenetur odit ipsam, aut laborum temporibus harum
+              quibusdam voluptas corrupti quas delectus, dolorum hic dolor,
+              voluptate totam ea sunt quasi.
+            </span>
+          </p>
+        </div>
+        <p><a href="#manav">Retour à la nav</a></p>
+      </section>
+      <section id="sec-tab">
+        <a href="./tableaux.html">La page tableaux</a>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

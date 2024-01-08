@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Nombre Mystère</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Le nombre mystère</h1>
+        <p id="ligne1">Ligne1</p>
+        <p id="ligne2">Ligne2</p>
+        <div class="saisie">
+            <span>Nombre de coups : <span id="nbCoups"></span></span>
+            <input type="text" id="nbUser">
+            <button class="bouton" id="validerBtn" onclick="Valider()">Valider</button>
+        </div>
+        <button class="bouton" id="rejouerBtn" onclick="Rejouer()">Rejouer</button>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

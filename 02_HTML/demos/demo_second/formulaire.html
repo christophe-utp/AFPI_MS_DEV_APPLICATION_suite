@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1>Ma page formulaire</h1>
+    <a href="./index.html">Home Page</a>
+    <form action="mailto:toto@toto.com" method="post">
+        <fieldset>
+            <legend>Mon formulaire</legend>
+            <label for="demotexte">Texte </label>
+            <input type="text" placeholder="Entrez du texte ..." id="demotexte" name="demotexte" required>
+            <br>
+            <label for="demonumber">Nombre </label>
+            <input type="number" placeholder="123" id="demonumber" name="demonumber">
+            <br>
+            <label for="demomdp">Mot de passe </label>
+            <input type="password" placeholder="123" id="demomdp" name="demomdp">
+            <br>
+            <label for="demodate">Date</label>
+            <input type="date"  id="demodate" name="demodate" required>
+            <br>
+            <label for="demomail">Email</label>
+            <input type="email"  id="demomail" name="demomail" placeholder="toto@toto.com">
+        </fieldset>
+        <fieldset>
+            <legend>Suite formulaire</legend>
+            <label for="check">Choix de type OUI / NON</label>
+            <input type="checkbox" id="check" name="check">
+            <br>
+            <label for="">Choix Multiple</label>
+            <input type="radio" name="radioexemple" value="0">
+            <label for="radioexemple-0">A</label>
+            <input type="radio" name="radioexemple" value="1">
+            <label for="radioexemple-1">B</label>
+            <input type="radio" name="radioexemple" value="2">
+            <label for="radioexemple-2">C</label>
+            <input type="radio" name="radioexemple-test" value="3">
+            <label for="radioexemple-3">D</label>
+            <input type="radio" name="radioexemple-test" value="4">
+            <label for="radioexemple-3">E</label>
+        </fieldset>
+            <fieldset>
+                <legend>Choix de type select</legend>
+                <label for="">Choix de type select :</label>
+                <select name="select-exemple" id="select-exemple">
+                    <optgroup label="Option groupe 1">
+                        <option value="0">Option A</option>
+                        <option value="1">Option B</option>
+                        <option value="2">Option C</option>
+                    </optgroup>
+                    <optgroup label="Option groupe 2">
+                        <option value="3">Option D</option>
+                        <option value="4">Option E</option>
+                        <option value="5">Option F</option>
+                    </optgroup>
+                    <optgroup label="Option groupe 3">
+                        <option value="6">Option G</option>
+                        <option value="7">Option H</option>
+                        <option value="8">Option I</option>
+                    </optgroup>
+                    
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Choix de type select</legend>
+                <label for="">Choix de type select :</label>
+                <select name="select-exemple" id="select-exemple">
+                    <optgroup label="Option groupe 1">
+                        <option value="0">Option A</option>
+                        <option value="1">Option B</option>
+                        <option value="2">Option C</option>
+                    </optgroup>
+                    <optgroup label="Option groupe 2">
+                        <option value="3">Option D</option>
+                        <option value="4">Option E</option>
+                        <option value="5">Option F</option>
+                    </optgroup>
+                    <optgroup label="Option groupe 3">
+                        <option value="6">Option G</option>
+                        <option value="7">Option H</option>
+                        <option value="8">Option I</option>
+                    </optgroup>
+                    
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Message : </legend>
+                <label for="form-textearea">Votre Message :</label>
+                <br>
+                <textarea name="comment" id="form-textearea" cols="70" rows="10" ></textarea>
+            </fieldset>
+            <input type="submit" value="Envoyer">
+            <button>Valider</button>
+            <button type="reset">Annuler</button>
+
+
+
+    </form>
+    <button type="reset">Annuler en dehors du form</button>
+    
+</body>
+</html>

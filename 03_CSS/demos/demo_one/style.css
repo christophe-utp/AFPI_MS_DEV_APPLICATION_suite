@@ -1,0 +1,35 @@
+/* je rajoute un commentaire */
+/* commentaire */
+/* p {
+    color: #665c5c;
+    border: solid;
+    background-color: red;
+}
+
+p{
+    color: blue;
+} */
+
+/* selecteur d'identifiant spécificité : 100 */
+#monpara{
+    color: green;
+}
+/* selecteur de classe spécificité : 010 */
+.rouge {
+    color: red;
+}
+/* selecteur simple spécificité : 001 (sélecteur de type) */
+/* le !important a la priorite absolue */
+p {
+    color : blue !important;
+}
+
+.centrer {
+    text-align: center;
+}
+
+#troisiemepara {
+    text-align: left;
+}
+
+
