@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tp Annuaire</title>
+  </head>
+  <body>
+    <h1>TP-POO - Annuaire - Liste de contacts</h1>
+    <p>Mise en application de la théorie <mark>POO</mark> en <mark>Javascript</mark> </p>
+
+    <h2>Liste de Contacts</h2>
+    <table>
+        <thead>
+            <th>Titre</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Date de Naissance</th>
+            <th>Téléphone</th>
+            <th>Email</th>
+        </thead>
+        <tbody id="tableau">
+            <!-- On injecte les lignes du tableaux ici en javascript -->
+        </tbody>
+    </table>
+
+    <!-- Formulaire Ajout Contact -->
+    <h2>Ajout de contact</h2>
+    <div>
+        <input type="radio" name="Titre" id="Mr">
+        <label for="Mr">Mr</label>
+    </div>
+    <div>
+        <input type="radio" name="Titre" id="Mme">
+        <label for="Mme">Mme</label>
+    </div>
+    <div>
+        <input type="text" name="Nom" id="Nom" placeholder="Nom">
+        <input type="text" name="PreNom" id="Prenom" placeholder="Prénom">
+    </div>
+    <div>
+        <input type="date" name="dateNaissance" id="dateNaissance">
+        <input type="tel" name="Telephone" id="Telephone" placeholder="Téléphone">
+        <input type="email" name="Email" id="Email" placeholder="Email">
+    </div>
+    <div>
+        <button id="btnValider">Ajouter</button>
+    </div>
+
+  </body>
+  <script type="module" src="./js/script.js"></script>
+</html>
