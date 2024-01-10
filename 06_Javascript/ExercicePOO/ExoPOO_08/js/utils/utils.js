@@ -20,4 +20,11 @@ async function getPokemonInfo(pokemonNumber) {
    }
 }
 
-export default getPokemonInfo
+export function fetchPokemonData() {
+    const pokemonDataList = []
+    for(let i = 1; i < 11; i++){
+       const pokemonInfo =  getPokemonInfo(i)
+       pokemonDataList.push(pokemonInfo)
+    }
+    return pokemonDataList
+}
