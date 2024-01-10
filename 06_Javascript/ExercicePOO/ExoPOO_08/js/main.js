@@ -14,8 +14,11 @@ const randomBtn = document.querySelector(".random-btn")
 
 let pokemons = []
 
+let currentItem = 0
+
 fetchPokemonData().then((data) => {
     pokemons = data
+    console.log(pokemons)
     displayFirst()
 })
 
@@ -23,13 +26,32 @@ function displayFirst(){
     if(pokemons.length > 0) {
         loading.style.display = "none"
         container.style.display = ""
-        const item = pokemons[5]
+        const item = pokemons[currentItem]
         name.textContent = item.name
         weight.textContent = item.weight
         height.textContent = item.height
         img.src = item.img
     }
 }
+
+
+nextBtn.addEventListener("click",function () {
+    currentItem++
+    if(currentItem > pokemons.length - 1) {
+        currentItem = 0
+    }
+    displayFirst()
+})
+
+prevBtn.addEventListener("click",function () {
+    currentItem--
+    if(currentItem < 0) {
+        currentItem = pokemons.length - 1
+    }
+    displayFirst()
+})
+
+
 
 
 container.style.display = "none"
