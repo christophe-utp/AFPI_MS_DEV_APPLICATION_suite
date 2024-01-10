@@ -22,7 +22,7 @@ async function getPokemonInfo(pokemonNumber) {
 
 export async function fetchPokemonData() {
     const pokemonDataList = []
-    for(let i = 1; i < 16; i++){
+    for(let i = 1; i < 151; i++){
        const pokemonInfo = await getPokemonInfo(i)
        pokemonDataList.push(pokemonInfo)
     }

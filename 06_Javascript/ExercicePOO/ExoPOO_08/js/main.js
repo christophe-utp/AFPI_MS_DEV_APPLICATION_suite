@@ -51,7 +51,10 @@ prevBtn.addEventListener("click",function () {
     displayFirst()
 })
 
-
+randomBtn.addEventListener('click', function () {
+    currentItem = Math.floor(Math.random() * pokemons.length)
+    displayFirst()
+})
 
 
 container.style.display = "none"
