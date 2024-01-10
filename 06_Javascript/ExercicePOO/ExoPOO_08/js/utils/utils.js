@@ -1,3 +1,4 @@
+import { Pokemon } from "../classe/Pokemon.js"
 
 
 // URL de l'API que nous allons interoger
@@ -10,8 +11,9 @@ async function getPokemonInfo(pokemonNumber) {
             throw new Error('Erreur HTTP : '+ response.status)
         }
         const pokemonData = await response.json()
-        console.log(pokemonData)
+       // console.log(pokemonData)
 
+        return new Pokemon(pokemonData.name,pokemonData.weight,pokemonData.height,pokemonData.sprites.front_default)
 
    }catch(error){
         console.error("Erreur lors de la récuperartion des donnees " + error.message)
