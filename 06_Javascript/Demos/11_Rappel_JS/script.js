@@ -78,10 +78,11 @@ console.table(poivrons)
 console.log("------Le Destructuring --------")
 console.log("-- Avec Tableau Numérique --")
 
-const tabNum = [1,2,3]
+const tabNum = [1,2,3] 
 
 // Depuis ES6 EcmaScript 6
 const [a,b] = tabNum
+// ES5
 //const a = tabNum[0];
 
 console.log(a)
@@ -97,15 +98,19 @@ const user = {
     active : true
 }
 
+
 // ES5
 //const firstname = user.firstname
 //const lastname = user.lastname
+// const ageUser = user.age
+// let isActive = user.active
 
 // ES6 
-const {firstname, lastname } = user
+const {firstname, lastname, active } = user
 
 console.log(firstname)
 console.log(lastname)
+console.log(active)
 
 console.log("-- Avec des Fonctions()  --")
 
@@ -122,5 +127,112 @@ function getFullName({firstname, lastname }){
 
 console.log(getFullName(user))
 
+const monstre = {
+    force : 45,
+    type : "orc",
+    firstname : "toto",
+    lastname : "tata"
+}
+
+console.log(getFullName(monstre))
+
 
 console.log("-- Arrow Function --")
+
+// Cas 1 
+// fonction sans parametre
+let test1 = function () {
+    return "Toto"
+}
+
+// Equivalent à
+let test2 = () => {
+    return "toto"
+}
+
+// Simplification seuleument si la fonction ne fait qu'un return
+let test3 = () => "ToTo"
+
+console.log(test1())
+console.log(test2())
+console.log(test3())
+
+// Cas 2
+// Avec 1 parametre
+let test4 = function (monster) {
+    return monster.firstname
+}
+
+// Equivalent à 
+let test5 = (havAFirstname) => {
+    return havAFirstname.firstname
+}
+
+// Simplification seuleument si la fonction ne fait qu'un return
+let test6 = (prenom) => prenom.firstname
+
+console.log(test4(monstre))
+console.log(test4(user))
+
+console.log(test5(monstre))
+console.log(test5(user))
+
+console.log(test6(monstre))
+console.log(test6(user))
+
+// Cas 3 Arrow Function 
+// Au moin 2 paramétres
+let test7 = function (firstname, lastname) {
+    //return (firstname + " " + lastname)
+    return `${firstname} ${lastname}`
+}
+
+// Equivalent à
+let test8 = (fname,lname) => {
+    return `${fname} ${lname}`
+}
+
+// Simplification seuleument si la fonction ne fait qu'un return
+let test9 = (fname,lname) => `${fname} ${lname}`
+
+
+console.log(test7("Jean","Martin"))
+console.log(test8("Jaques","Martin"))
+console.log(test8("Jacques","Onneil"))
+
+
+// nettoyage de la console
+console.clear()
+console.log("---- Rest Operator -----")
+console.log(vegetables)
+
+//let haricot = vegetables[3] // Crée une réference vers l'objet vegetables[3], ce n'est pas une copie
+let haricot = {...vegetables[3]} // Creé une copie
+
+haricot.price = 2
+
+console.log(haricot)
+console.log(vegetables[3])
+console.log(vegetables)
+
+const tabNum2 = [1,2,3,4]
+console.table(tabNum2)
+// En ES5
+//const a = tabNum2[0]
+//const b = tabNum2[1]
+
+// En ES6 avec le destructuring
+const [d,...e] = tabNum2
+
+
+const [first,...lereste] = tabNum2
+
+
+// Affichage
+console.log(d)
+console.log(e)
+
+// Affichage
+console.log(first)
+console.log(lereste)
+
