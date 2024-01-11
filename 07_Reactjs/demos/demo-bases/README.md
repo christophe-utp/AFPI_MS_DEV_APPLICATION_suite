@@ -25,6 +25,21 @@ npm start
 - si je souhaite arreter mon application raccourci clavier CTRL + C
 
 
+## 3. Recuperer un projet react sur github
+
+- ouvrir un terminal  dans le repertoire de mon application que je viens de recupere
+- afin de recuperer les nodes_modules je doit taper la commande :
+
+```
+npm i
+```
+
+- alors je peut lance mon application avec :
+
+```
+npm start
+```
+
 
 
 
