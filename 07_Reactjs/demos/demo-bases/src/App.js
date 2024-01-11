@@ -1,14 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstComponent from './components/FirstComponent';
+import SecondComponent from './components/SecondComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       <h1>J'ai réussi !!!!</h1>
-      </header>
-    </div>
+    <>
+   <h1>Ma jolie APP !!!</h1>
+   <SecondComponent prenom="Toto" nom="Dupond"/>
+   <SecondComponent prenom="Titi" nom="Dupont"/>
+   <SecondComponent prenom="Tata" nom="Dupon"/>
+   <FirstComponent />
+   <FirstComponent />
+   <FirstComponent />
+   <FirstComponent />
+   </>
   );
 }
 
