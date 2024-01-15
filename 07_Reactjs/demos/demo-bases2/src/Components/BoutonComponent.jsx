@@ -8,6 +8,6 @@ export default function BoutonComponent(props) {
     console.log(textbutton)
 
   return (
-    <button style={{backgroundColor: "red", margin : "30px"}}>{textbutton}</button>
+    <button style={{backgroundColor: "red", margin : "30px"}} >{textbutton}</button>
   )
 }
