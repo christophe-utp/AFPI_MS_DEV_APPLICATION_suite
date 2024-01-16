@@ -7,13 +7,15 @@ import Person from './models/Person'
 
 export default function App() {
 
-    const myPersons = [
-        new Person("Albert","DUPONT"),
-        new Person("Maria","DUPONT"),
-        new Person("Chloé","DUPONT"),
-        new Person("Sylvia","MARTEZ"),
-        new Person("Clement","DERO")
-    ]
+    // const myPersons = [
+    //     new Person("Albert","DUPONT"),
+    //     new Person("Maria","DUPONT"),
+    //     new Person("Chloé","DUPONT"),
+    //     new Person("Sylvia","MARTEZ"),
+    //     new Person("Clement","DERO")
+    // ]
+
+    const myPersons = []
 
   return (
     <>
