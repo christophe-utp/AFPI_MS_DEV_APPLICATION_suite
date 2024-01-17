@@ -3,6 +3,8 @@ import ChildComponent from './ChildComponent'
 
 export default function ParentComponent() {
 
+  const textbtn = "le texte pour le bouton de mon petit enfant"
+
     const sayHelloParent = () => {
         console.log("Hello World from ParentComponent")
     }
@@ -19,7 +21,8 @@ export default function ParentComponent() {
         <h1>Parent Component</h1>
         <button onClick={sayHelloParent}>Bouton parent</button>
         <hr />
-        <ChildComponent mafonction={sayHelloParent} paramA="toto" paramB={montab} mafonctionavecparam={sayHelloParentWithParam}/>
+        <ChildComponent 
+        mafonction={sayHelloParent} paramA="toto" paramB={montab} mafonctionavecparam={sayHelloParentWithParam} textbtn={textbtn}/>
         
     </>
   )

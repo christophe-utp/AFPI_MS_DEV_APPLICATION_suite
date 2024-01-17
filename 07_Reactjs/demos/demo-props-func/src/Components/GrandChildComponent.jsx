@@ -1,10 +1,14 @@
 import React from 'react'
 
-export default function GrandChildComponent() {
+export default function GrandChildComponent(props) {
+
+
+  const textbtn = props.textbtn
+
   return (
     <>
    <hr />
-    <button>Petit enfant </button>
+    <button onClick={props.mafonction}>{textbtn}</button>
     </>
   )
 }

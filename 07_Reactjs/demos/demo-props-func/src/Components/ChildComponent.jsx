@@ -7,6 +7,7 @@ export default function ChildComponent(props) {
 
    // console.log(props.paramA)
   //  console.log(props.paramB)
+  // console.log(props.textbtn)
 
     const sayHello = () => {
         console.log("Hello World from ChildComponent")
@@ -38,7 +39,7 @@ export default function ChildComponent(props) {
         <button onClick={() => props.mafonctionavecparam("Toto")}>Clique</button>
         <hr />
         <button onClick={callParent}>Last Click !!!!</button>
-        <GrandChildComponent />
+        <GrandChildComponent textbtn={props.textbtn} mafonction={props.mafonction}/>
     </>
   )
 }
