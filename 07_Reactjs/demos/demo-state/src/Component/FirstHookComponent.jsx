@@ -20,6 +20,10 @@ export default function FirstHookComponent() {
         setNomComplet(prevState => ({...prevState, firstname: "Claire"}))
     }
 
+    const vieillir = () => {
+        setNomComplet(prevState => ({...prevState, age : prevState.age - 1}))
+    }
+
   return (
     <>
     <hr />
@@ -39,7 +43,8 @@ export default function FirstHookComponent() {
     <button onClick={() => setNomComplet(prevState => ({...prevState, firstname: "Eric", lastname: "Doe"}))}>Changer le nom complet en entier</button>
     <br />
     <button onClick={() => setNomComplet(prevState => ({...prevState, age : prevState.age + 1}))}>+</button>
-    <button onClick={() => setNomComplet(prevState => ({...prevState, age : prevState.age - 1}))}>-</button>
+    {/* <button onClick={() => setNomComplet(prevState => ({...prevState, age : prevState.age - 1}))}>-</button> */}
+    <button onClick={vieillir}>-</button>
     </>
   )
 }
