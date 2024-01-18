@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import PersonTable from './components/PersonTable'
 import Person from './models/Person'
 import PersonTableModif from './components/PersonTableModif'
+import ShowPeople from './components/ShowPeople/ShowPeople'
 
 
 export default function App() {
@@ -21,6 +22,10 @@ export default function App() {
   return (
     <>
         <Header title="Annuaire"/>
+        {/* <ShowPeople lastname="Sandra" firstname="Doe"/>
+        <ShowPeople lastname="Christopher" firstname="Dupont"/>
+        <ShowPeople lastname="Julie" firstname="Martinez"/> */}
+        {myPersons.map((person,index) => (<ShowPeople key={index} lastname={person.lastname} firstname={person.firstname} />))}
         <h2>Avec un tableau remplie</h2>        
         <PersonTable persons={myPersons}/>
         <hr />

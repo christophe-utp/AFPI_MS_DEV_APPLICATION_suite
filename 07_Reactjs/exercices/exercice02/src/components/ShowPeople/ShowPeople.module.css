@@ -1,0 +1,18 @@
+.card {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    border : 2px solid black;
+    text-align: center;
+}
+
+.firstname {
+    background-color: aquamarine;
+    font-size: 30px;
+    color: brown;
+}
+
+.lastname {
+    font-size: 20px;
+    color: blue;
+}
