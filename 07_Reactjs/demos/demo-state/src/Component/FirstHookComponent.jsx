@@ -6,7 +6,8 @@ export default function FirstHookComponent() {
     const [monPrenom,setMonPrenom] = useState("Christophe")
     const [nomComplet,setNomComplet] = useState({
         firstname: "Christophe",
-        lastname: "Dupont"
+        lastname: "Dupont",
+        age : 25
     })
 
 
@@ -29,13 +30,16 @@ export default function FirstHookComponent() {
     <button onClick={() => setMonPrenom("Tata")}>Changer le prénom v2</button>
     <hr />
     <h2>FirstHookComponenent Nom complet!!!</h2>
-    <p>Mon nom complet est : {nomComplet.lastname} {nomComplet.firstname}</p>
+    <p>Mon nom complet est : {nomComplet.lastname} {nomComplet.firstname} je suis agé de {nomComplet.age} ans.</p>
     <br />
     <button onClick={changePrenomNomComplet}>Changer le prénom du nom complet</button>
     <br />
     <button onClick={() => setNomComplet(prevState => ({...prevState, lastname: "Martin"}))}>Changer le nom du nom complet</button>
     <br />
-    <button onClick={() => setNomComplet(prevState => ({ firstname: "Eric", lastname: "Doe"}))}>Changer le nom complet en entier</button>
+    <button onClick={() => setNomComplet(prevState => ({...prevState, firstname: "Eric", lastname: "Doe"}))}>Changer le nom complet en entier</button>
+    <br />
+    <button onClick={() => setNomComplet(prevState => ({...prevState, age : prevState.age + 1}))}>+</button>
+    <button onClick={() => setNomComplet(prevState => ({...prevState, age : prevState.age - 1}))}>-</button>
     </>
   )
 }
