@@ -18,7 +18,9 @@ export default function App() {
         console.log(user)
         console.log(firstname)
         console.log(lastname)
-        setUser(prevstate => ({firstname : "titi", lastname : "toto"}))
+       // setUser(prevstate => ({firstname : firstname, lastname : lastname}))
+        setUser({firstname, lastname})
+        
     }
 
   return (
