@@ -9,8 +9,7 @@ export default function ListingComponent() {
     const addElementToListing = () => {
         console.log("Je doit rajouter un element à ma liste")
         // je dois rajouter du texte dans mon state en utilsant setListing
-
-
+        setListing(prevstate => [...prevstate,"Titi"])
     }
 
 
